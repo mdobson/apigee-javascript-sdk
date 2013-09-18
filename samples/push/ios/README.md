@@ -37,7 +37,7 @@
         //Attach PhoneGap push plugin to Window
         var pushNotification = window.plugins.pushNotification;
         //Register the device with the APNS
-        pushNotification.registerDevice({alert:true, badge:true, sound:true}, function(status) {
+        pushNotification.register({alert:true, badge:true, sound:true}, function(status) {
           //If a token was returned
             if(status.deviceToken) {
                 //Setup device registration with Apigee

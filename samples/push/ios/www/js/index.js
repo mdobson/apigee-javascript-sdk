@@ -46,7 +46,7 @@ var app = {
             logging:true
         });
         var pushNotification = window.plugins.pushNotification;
-        pushNotification.registerDevice({alert:true, badge:true, sound:true}, function(status) {
+        pushNotification.register({alert:true, badge:true, sound:true}, function(status) {
             if(status.deviceToken) {
                 var options = {
                     notifier:"YOUR NOTIFIER",

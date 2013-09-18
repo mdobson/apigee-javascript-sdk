@@ -48,7 +48,7 @@ var app = {
             gcmSenderId:"YOUR GCM SENDER ID"
         };
 
-        pushNotification.registerDevice(gcmOptions, function(device){
+        pushNotification.register(gcmOptions, function(device){
             var options = {
                 notifier:"YOUR NOTIFIER",
                 deviceToken:device.deviceId
